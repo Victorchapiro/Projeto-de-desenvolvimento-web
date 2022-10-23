@@ -1,0 +1,8 @@
+.dropdown-item:hover{  
+    background-color: lightblue;
+}
+  
+.dropdown-item:active{
+    font-weight: bold;
+    color: rgba(17,144,203,255)
+}

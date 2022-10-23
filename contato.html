@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVG Tecnologia - Página inicial</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/carousel.css">
+    <link rel="stylesheet" href="./assets/css/dropdown.css">  
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#"></a>
+        <a href="index.html"><img src="./assets/img/logo_transparente.png" width="120" height="120" alt="Logo da CVG Tecnologia"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+          aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Informática
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Notebook</a>
+                <a class="dropdown-item" href="#">Computador</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Acessórios</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Eletrônicos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Iphones</a>
+                <a class="dropdown-item" href="#">Smartphones</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Tablets</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Eletrodomésticos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Lavadoras</a>
+                <a class="dropdown-item" href="#">Geladeiras</a>
+                <a class="dropdown-item" href="#">Fogões e cooktops</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="contato.html">Fale Conosco</a></li>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="quem.html">Quem somos</a></li>
+            </li>
+          </ul>
+          <form class="form-inline" style="padding: 0 20% 0 10%;">          
+            <input class="form-control mr-sm-2" type="text" placeholder="o que procura?" aria-label="Pesquisar">
+            <button type="button" class="btn btn-outline-info my-2 my-sm-0" type="input"> &#128269 Pesquisar</button>                  
+          </form>
+          
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+          Entrar
+        </button>
+        </div>
+    </header>
+
+    <body>
+        <main>
+            <div class="formulario">
+                <form>
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" class="input-padrao" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+    
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+    
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+    
+                    <fieldset>
+                        <legend>Como prefere o nosso contato?</legend>
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                        
+                        <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+                    </fieldset>
+    
+                    <fieldset class="horario-preferido">
+                        <legend>Qual horário prefere ser atendido?</legend>
+                        <select>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </fieldset>
+    
+                    <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+    
+                    <input type="submit" value="Enviar formulário" class="enviar">
+                </form>    
+            </div>
+        </main>
+
+        <footer>
+            <div class="rodape">
+                Trabalho de Desenvolvimento Web
+            </div>            
+        </footer>
+    </body>
+</html>

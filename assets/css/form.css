@@ -1,0 +1,42 @@
+form label, form legend {
+	display:block;
+	font-size: 16px;
+	margin: 0 0 10px;
+}
+
+.formulario {
+    margin: 60px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 15px;
+	padding: 10px 15px;
+	width: 50%;
+}
+
+.horario-preferido {
+    margin-top: 15px;
+}
+
+.checkbox {
+	margin: 25px 0px;
+}
+
+.enviar {
+	width:30%;
+	padding: 12px 0;
+	background: lightblue;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: rgba(17,144,203,255);
+	transform: scale(1.05);
+}

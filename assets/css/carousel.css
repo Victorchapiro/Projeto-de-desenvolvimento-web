@@ -1,0 +1,12 @@
+.carousel-control-next{
+    right: 20%;
+    opacity: 1;
+    filter: invert(1);
+  }
+
+  .carousel-control-prev{
+    left: 20%;
+    opacity: 1;
+    filter: invert(1);
+  }
+

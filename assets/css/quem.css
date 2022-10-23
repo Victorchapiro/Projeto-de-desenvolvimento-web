@@ -1,0 +1,12 @@
+table, td, tr {
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+  
+  th {
+    background-color: rgba(17,144,203,255); 
+    font-size: larger;
+    padding: 10px;
+  }

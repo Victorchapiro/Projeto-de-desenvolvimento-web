@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script');
+
+.rodape {
+    background-color:  rgba(17,144,203,255);        
+    color: white;    
+    font-family: 'Dancing Script', serif;
+    font-size: 32px;
+    font-style: italic;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 10px 10px 10px;
+    text-align: center;
+}
