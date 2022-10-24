@@ -6,96 +6,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">    
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/carousel.css">
-  <link rel="stylesheet" href="./assets/css/dropdown.css">  
-  <link rel="stylesheet" href="./assets/css/footer.css">
-
-    <link rel="stylesheet" href="./assets/css/form.css"> 
-    <title>CVG Tecnologia - Cadastro</title>
+    
+  <link href="form-validation.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/cadastro.css">  
+  <title>CVG Tecnologia - Cadastro</title>
 </head>
 
-<body>  
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-info border-bottom shadow-sm mb-3">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="./assets/img/logo_transparente.png" width="90" height="96" alt="Logotipo da CVG Tecnologia">
-        </a>      
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Informática
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Notebook</a></li>
-                <li><a class="dropdown-item" href="#">Computador</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Acessórios</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Eletrodomésticos
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Fogão</a></li>
-                <li><a class="dropdown-item" href="#">Geladeira</a></li>
-                <li><a class="dropdown-item" href="#">Máquina de Lavar</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Mercado
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Limpeza</a></li>
-                <li><a class="dropdown-item" href="#">Cama mesa e banho</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Conserto
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Solicite um orçamento</a></li>
-                <li><a class="dropdown-item" href="#">Agendar visita</a></li>
-              </ul>
-            </li>
-             <li><a href="login.html"><img src="./assets/img/login_icon.png"  width="32" height="32"></a></li>
-          </ul>
-  
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">      
-            <a href="resultado.html" button class="btn btn-outline-success" type="info">Pesquisar</button></a>
-          </form>        
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <p>Página de Cadastro - Em construção</p>
-    style {
-      
-    }
-  </main>
+<body>
     
-  <footer>
-        <div class="rodape">
-          <grid-container>
-            <grid-item><span><a class="rodape-link" href="index.html">Home</a></span></grid-item>      
-            <grid-item><span><a class="rodape-link" href="quem.html">Quem somos</a></span></grid-item>
-            <grid-item><span><a class="rodape-link" href="contato.html">Fale conosco</a></span></grid-item>
-          </grid-container>
-        </div>
-  </footer>
-</body>
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="./assets/img/logo_transparente.png" alt="" width="90" height="96">
+      <h2>Bem-vindo à CVG Tecnologia</h2>
+      <p class="lead">Vamos a um rápido cadastro!</p>
+    </div>
 
+    <div class="row g-5">
+      <div class="col-md-7 col-lg-8">
+        
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                O nome é obrigatório.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Sobrenome</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                O sobrenome é obrigatório.
+              </div>
+            </div>
+   
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-muted"></span></label>
+              <input type="email" class="form-control" id="email" placeholder="seuemail@seudominio.com">
+              <div class="invalid-feedback">
+                Favor informar um email válido.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="address" placeholder="Rua ..." required>
+              <div class="invalid-feedback">
+                Favor informar o endereço.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Complemento<span class="text-muted">(opcional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="apto ...">
+            </div>
+
+            <div class="col-13">
+              <label for="address2" class="form-label">Bairro</label>
+              <input type="text" class="form-control" id="address2" placeholder="Nome do bairro ...">
+            </div>
+
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">UF</label>
+              <select class="form-select" id="state" required>
+                <option value="">Escolha a UF...</option>
+                <option>Acre (AC)</option> 
+                <option>Alagoas (AL)</option> 
+                <option>Amapá (AP)</option> 
+                <option>Amazonas (AM)</option> 
+                <option>Bahia (BA)</option> 
+                <option>Ceará (CE)</option> 
+                <option>Espírito Santo (ES)</option> 
+                <option>Goiás (GO)</option> 
+                <option>Maranhão (MA)</option> 
+                <option>Mato Grosso (MT)</option> 
+                <option>Mato Grosso do Sul (MS)</option> 
+                <option>Minas Gerais (MG)</option> 
+                <option>Pará (PA)</option> 
+                <option>Paraíba (PB)</option> 
+                <option>Paraná (PR)</option> 
+                <option>Pernambuco (PE)</option> 
+                <option>Piauí (PI)</option> 
+                <option>Rio de Janeiro (RJ)</option> 
+                <option>Rio Grande do Norte (RN)</option> 
+                <option>Rio Grande do Sul (RS)</option> 
+                <option>Rondônia (RO)</option> 
+                <option>Roraima (RR)</option> 
+                <option>Santa Catarina (SC)</option> 
+                <option>São Paulo (SP)</option> 
+                <option>Sergipe (SE)</option> 
+                <option>Tocantins (TO)</option>                 
+              </select>
+              <div class="invalid-feedback">
+                Escolha uma UF válida.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">CEP</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                É obrigatório informar o CEP.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="index2.html">Página Inicial</a></li>
+      <li class="list-inline-item"><a href="quem.html">Quem Somos</a></li>
+      <li class="list-inline-item"><a href="contato.html">Fale Conosco</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="form-validation.js"></script>
+
+</body>
+  
 </html>

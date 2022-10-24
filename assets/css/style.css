@@ -1,5 +1,10 @@
+body {
+  background-color: #e3f2fd;      
+}
+
 .carousel-control, .carousel-control:hover {
   opacity: 1;
+  background-color: #e3f2fd;  
 }
 .carousel-control-next{
   right: 20%;
@@ -33,4 +38,8 @@
   font-size: 20px;
 }
 
-
+.catalogo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #e3f2fd;      
+}
