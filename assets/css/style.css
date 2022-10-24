@@ -2,26 +2,6 @@ body {
   background-color: #e3f2fd;      
 }
 
-.carousel-control, .carousel-control:hover {
-  opacity: 1;
-  background-color: #e3f2fd;  
-}
-.carousel-control-next{
-  right: 20%;
-  opacity: 1;
-    filter: invert(1);
-}
-.carousel-control-prev{
-  left: 20%;
-  opacity: 1;
-  filter: invert(1);
-}
-
-.carousel-indicators{
-  opacity: 1;
-  filter: invert(1);
-}
-
 .carrinho-item{
   position: relative;
   margin-left: 10px;

@@ -1,20 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link href=".\assets\css\style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">    
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/carousel.css">
+  <link rel="stylesheet" href="./assets/css/dropdown.css">  
+  <link rel="stylesheet" href="./assets/css/footer.css">
+
+  <title>CVG Tecnologia - Página Inicial</title>
 </head>
 
 <body>
+<header>
   <nav class="navbar navbar-expand-lg navbar-light bg-info border-bottom shadow-sm mb-3">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-      <img src=".\assets\imagens\Logo.PNG" width="120" height="120" alt="">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/img/logo_transparente.png" width="90" height="96" alt="Logotipo da CVG Tecnologia">
+      </a>      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -62,127 +68,102 @@
               <li><a class="dropdown-item" href="#">Agendar visita</a></li>
             </ul>
           </li>
+          <li><a href="login.html"><img src="./assets/img/login-icon.png"  width="32" height="32"></a></li>
+          <li><a href="#"><img src="./assets/img/cart-icon.png"  width="32" height="32"></a></li>
         </ul>
+
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-          <button class="btn btn-outline-dark me-sm-5" type="submit">Buscar</button>
-        </form>
-      </div>
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Entrar
-      </button>
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Entre ou castra-se</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            </div>
-            <div class="modal-footer">
-
-              <a href="cadastro.html"> <button type="button" class="btn btn-success"
-                  data-bs-dismiss="modal">Cadastre-se</button></a>
-              <a href="login.html"> <button type="button" class="btn btn-primary">Logar</button></a>
-            </div>
-          </div>
-        </div>
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">      
+          <a href="resultado.html" button class="btn btn-outline-success" type="info">Pesquisar</button></a>
+        </form>        
       </div>
     </div>
   </nav>
+</header>
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+<main>
+  <div class="carrossel">
+  <div id="carrossel-ofertas" class="carousel slide" data-bs-ride="carousel" data-interval="1500">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+      <button type="button" data-bs-target="#carrossel-ofertas" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+      <button type="button" data-bs-target="#carrossel-ofertas" data-bs-slide-to="1"
         aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+      <button type="button" data-bs-target="#carrossel-ofertas" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src=".\assets\imagens\22_cuponspcs_destaquedesk-341a3df74c3f.jpeg" class="d-block w-100" alt="...">
+        <img src="./assets/img/carrossel_01.jpg" class="d-block w-100" alt="Oferta 1">
       </div>
       <div class="carousel-item">
-        <img src=".\assets\imagens\1256x315_destaque_desk-a0904e653293.jpeg" class="d-block w-100" alt="...">
+        <img src="./assets/img/carrossel_02.jpg" class="d-block w-100" alt="Oferta 2">
       </div>
       <div class="carousel-item">
-        <img src=".\assets\imagens\HI_Informatica_Detsque_desk_2-e881a12436b9.jpeg" class="d-block w-100" alt="...">
+        <img src="./assets/img/carrossel_03.jpg" class="d-block w-100" alt="Oferta 3">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-ofertas"
       data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+    <button class="carousel-control-next" type="button" data-bs-target="#carrossel-ofertas"
       data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <br><br>
-  <div class="d-flex p-2 m-5">
-    <div class="d-inline-flex p-2">
-      <img src=".\assets\imagens\oferta 1.jpeg" class="w-75">
-      <div class="link-produto">
-        <a href="">Sansung Galaxy S20</a>
+</div>
+  <div class="catalogo">
+  <div class="container text-center">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+      <div class="col">
+        <div class="p-3 border bg-light">Samsung S-20</div>
+          <img src="./assets/img/oferta 1.jpeg" class="w-75">
       </div>
-    </div>
-    <div class="d-inline-flex p-2">
-      <img src=".\assets\imagens\iphone 12.jpeg" class="w-75">
-      <div class="link-produto">
-        <a href="">Iphone 11 64 Gb</a>
+      <div class="col">
+        <div class="p-3 border bg-light">Iphone 11 64 GB</div>
+        <img src="./assets/img/iphone 12.jpeg" class="w-75">
       </div>
-    </div>
-    <div class="d-inline-flex p-2">
-      <img src=".\assets\imagens\iphone11.jpeg" class="w-75">
-      <div class="link-produto">
-        <a href="">Iphone 12 64 Gb</a>
+      <div class="col">
+        <div class="p-3 border bg-light">Iphone 12 64 GB</div>
+        <img src="./assets/img/iphone11.jpeg" class="w-75">
       </div>
-    </div>
-    <div class="d-inline-flex p-2">
-      <img src=".\assets\imagens\monitor.jpeg" class="w-75">
-      <div class="link-produto">
-        <a href="">Monitor 19,5 polegadas LED</a>
+      <div class="col">
+        <div class="p-3 border bg-light">Monitor 19,5 polegadas LED</div>
+        <img src="./assets/img/monitor.jpeg" class="w-75">
       </div>
-    </div>
-  </div>
-  <div class="d-flex p-2 m-5">
-    <div class="d-inline-flex p-2">
-      <img src=".\assets\imagens\oferta 1.jpeg" class="w-75">
-      <div class="link-produto">
-        <a href="">Sansung Galaxy S20</a>
+      <div class="col">
+        <div class="p-3 border bg-light">Samsung Galaxy S20  </div>
+        <img src="./assets/img/oferta 1.jpeg" class="w-75">
       </div>
-    </div>
-    <div class="d-inline-flex p-2">
-      <img src=".\assets\imagens\iphone 12.jpeg" class="w-75">
-      <div class="link-produto">
-        <a href="">Iphone 11 64 Gb</a>
+      <div class="col">
+        <div class="p-3 border bg-light">Iphone 11 64 Gb</div>
+        <img src="./assets/img/iphone 12.jpeg" class="w-75">
       </div>
-    </div>
-    <div class="d-inline-flex p-2">
-      <img src=".\assets\imagens\iphone11.jpeg" class="w-75">
-      <div class="link-produto">
-        <a href="">Iphone 12 64 Gb</a>
+      <div class="col">
+        <div class="p-3 border bg-light">Iphone 12 64 Gb</div>
+        <img src="./assets/img/iphone11.jpeg" class="w-75">
       </div>
-    </div>
-    <div class="d-inline-flex p-2">
-      <img src=".\assets\imagens\monitor.jpeg" class="w-75">
-      <div class="link-produto">
-        <a href="">Monitor 19,5 polegadas LED</a>
-      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Monitor 19,5 polegadas LED</div>
+        <img src="./assets/img/monitor.jpeg" class="w-75">
+      </div>  
     </div>
   </div>
+</div>
+</main>
 
-
-
-
+<footer>
+  <div class="rodape">
+    <grid-container>
+      <grid-item><span><a class="rodape-link" href="index.html">Home</a></span></grid-item>      
+      <grid-item><span><a class="rodape-link" href="quem.html">Quem somos</a></span></grid-item>
+      <grid-item><span><a class="rodape-link" href="contato.html">Fale conosco</a></span></grid-item>
+    </grid-container>
+  </div>
+</footer>
 
 
  

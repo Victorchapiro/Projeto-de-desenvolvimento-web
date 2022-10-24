@@ -4,9 +4,18 @@
     filter: invert(1);
   }
 
-  .carousel-control-prev{
+.carousel-control-prev{
     left: 20%;
     opacity: 1;
     filter: invert(1);
   }
 
+.carousel-control, .carousel-control:hover {
+    opacity: 1;
+    background-color: #e3f2fd;  
+  }
+ 
+.carousel-indicators{
+    opacity: 1;
+    filter: invert(1);
+  }
