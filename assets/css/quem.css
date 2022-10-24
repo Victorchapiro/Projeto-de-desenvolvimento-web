@@ -1,6 +1,6 @@
 table, td, tr {
     font-weight: bold;
-    padding: 10px;
+    padding: 10px 10px 10px;
     margin-top: 3rem;
     margin-left: 3rem;
   }
@@ -9,4 +9,8 @@ table, td, tr {
     background-color: rgba(17,144,203,255); 
     font-size: larger;
     padding: 10px;
+  }
+
+  main {
+    margin-bottom: 2rem;
   }

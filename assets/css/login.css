@@ -1,48 +1,48 @@
 body {  
-  background-color: #e3f2fd;
-  display: flex;
-  height: 100%;  
-  margin-left: 2rem;  
-}
-
-.form-login {  
-  margin-top:0%  
-}
-.form-floating {
-  margin-bottom: 1rem;
-}
-
-.form-signin {
-  padding: 5%;
-}
-
-button { 
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;	
-  cursor: pointer;   
-  font-weight: bold;
-  margin-top: 2rem;
-  padding: 10px;
-	transition: 1s all;
-  width: 200px;
-}
-
-button:hover{
-  background-color: rgb(0, 140, 255);
-}
-
-
-@media screen and (min-width: 0) {
-  .cabecalho {
-      padding: 0 1rem;
-      justify-content: center;
+    background-color: #e3f2fd;
+    display: flex;
+    height: 100%;  
+    margin-left: 2rem;  
   }
-}
-
-@media screen and (min-width: 768px) {
-  .cabecalho {
-      padding: 0 10rem;
-      justify-content: space-between;
+  
+  .form-login {  
+    margin-top:0%  
   }
-}
+  .form-floating {
+    margin-bottom: 1rem;
+  }
+  
+  .form-signin {
+    padding: 5%;
+  }
+  
+  button { 
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;	
+    cursor: pointer;   
+    font-weight: bold;
+    margin-top: 2rem;
+    padding: 10px;
+      transition: 1s all;
+    width: 200px;
+  }
+  
+  button:hover{
+    background-color: rgb(0, 140, 255);
+  }
+  
+  
+  @media screen and (min-width: 0) {
+    .cabecalho {
+        padding: 0 1rem;
+        justify-content: center;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .cabecalho {
+        padding: 0 10rem;
+        justify-content: space-between;
+    }
+  }
